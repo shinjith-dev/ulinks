@@ -6,7 +6,7 @@ you can use this suggested workflow:
 - Fork this repository;
 - Create a new feature branch based on the `main` branch;
 - Install dependencies by using `npm`
-- Implement your changes and ensure there aea no typos or errors.
+- Implement your changes and ensure there are no typos or errors.
 - Commit your changes (see the [committing guidelines]).
 - Submit a PR for review.
 

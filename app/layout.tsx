@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { inter } from "@/lib/fonts";
+import Link from "next/link";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -46,9 +47,16 @@ export default function RootLayout({
       >
         <Navbar />
 
-        <main className="px-4 grow flex flex-col">{children}</main>
+        <main className="px-4 grow flex flex-col">
+   {children}
+        </main>
 
-        <footer className="text-center py-3 px-8 text-light-200 dark:text-dark-500">Created and maintained by shinjith-dev</footer>
+        <footer className="text-center py-3 px-8 text-light-200 dark:text-dark-500">
+          Created and maintained by{" "}
+          <Link href="https://shinjith.dev" className="text-brand">
+            shinjith-dev
+          </Link>
+        </footer>
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="w-full mt-8 h-full grow flex justify-center items-center">
@@ -12,15 +14,19 @@ export default function Home() {
         </p>
 
         <div className="flex gap-2 justify-center font-medium">
-          <a
+          <Link
             href="/collection"
             className="bg-primary dark:bg-dark-200 py-2 px-6 rounded-md text-[#fafafa] cursor-pointer"
           >
             Start Browsing
-          </a>
-          <a className="bg-slate-200 dark:bg-[transparent] dark:text-dark-500 py-2 px-6 rounded-md text-dark-100">
+          </Link>
+          <Link
+            href="https://github.com/shinjith-dev/ulinks/blob/main/CONTRIBUTING.md"
+            target="_blank"
+            className="bg-slate-200 dark:bg-[transparent] dark:text-dark-500 py-2 px-6 rounded-md text-dark-100"
+          >
             Contribute
-          </a>
+          </Link>
         </div>
       </div>
     </div>

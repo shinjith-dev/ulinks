@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Sun, MoonStar } from "lucide-react";
+import { Sun, MoonStar, Github } from "lucide-react";
 import useDarkMode from "./hooks/useDarkMode";
 import { inconsolata } from "@/lib/fonts";
 
@@ -36,7 +36,7 @@ const Navbar = (props: Props) => {
         </span>
       </Link>
 
-      <div className="text-xl mx-2 sm:mx-4">
+      <div className="text-xl mx-2 sm:mx-4 flex gap-1">
         <button
           title={`Switch to ${getNextMode()} mode`}
           onClick={() => change(mode === "light")}
@@ -47,6 +47,14 @@ const Navbar = (props: Props) => {
         >
           {getIcon()}
         </button>
+
+        <Link
+          href="https://github.com/shinjith-dev/ulinks"
+          target="_blank"
+          className="rounded-full p-1 sm:p-2 group transition-all hover:shadow-spread-xs text-dark-200 dark:text-dark-500"
+        >
+          <Github size={20} />
+        </Link>
       </div>
     </nav>
   );
