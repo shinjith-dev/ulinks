@@ -1,0 +1,284 @@
+:root {
+  --light-100: #425f5b;
+  --light-200: #556f6c;
+  --light-300: #69807d;
+  --light-400: #7d918e;
+  --light-500: #92a3a0;
+  --light-600: #a7b5b2;
+
+  --dark-100: #171919;
+  --dark-200: #2c2e2e;
+  --dark-300: #434444;
+  --dark-400: #5b5c5c;
+  --dark-500: #747575;
+  --dark-600: #8e8f8f;
+}
+
+.markdown pre,
+.markdown code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  border-radius: 4px;
+}
+
+.markdown pre {
+  padding: 0.5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
+}
+
+@media print {
+  .markdown *,
+  .markdown *:before,
+  .markdown *:after {
+    background: transparent !important;
+    color: var(--dark-100) !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .markdown a,
+  .markdown a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown a[href^="#"]:after,
+  .markdown a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  .markdown pre,
+  .markdown blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  .markdown thead {
+    display: table-header-group;
+  }
+
+  .markdown tr,
+  .markdown img {
+    page-break-inside: avoid;
+  }
+
+  .markdown img {
+    max-width: 100% !important;
+  }
+
+  .markdown p,
+  .markdown h2,
+  .markdown h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown h2,
+  .markdown h3 {
+    page-break-after: avoid;
+  }
+}
+
+.markdown a,
+.markdown a:visited {
+  color: var(--light-100);
+  text-decoration: underline;
+}
+
+.markdown a:hover,
+.markdown a:focus,
+.markdown a:active {
+  color: var(--light-200);
+}
+
+.markdown .retro-no-decoration {
+  text-decoration: none;
+}
+
+.markdown {
+  line-height: 1.85;
+}
+
+.markdown li {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.markdown p,
+.markdown .retro-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+  display: inline;
+}
+
+.markdown h1,
+.markdown .retro-h1,
+.markdown h2,
+.markdown .retro-h2,
+.markdown h3,
+.markdown .retro-h3,
+.markdown h4,
+.markdown .retro-h4 {
+  margin: 1.414rem 0 0.5rem;
+  font-weight: 600;
+  line-height: 1.42;
+}
+
+.markdown h1,
+.markdown .retro-h1 {
+  margin-top: 0;
+  font-size: 2.3rem;
+}
+
+.markdown h2,
+.markdown .retro-h2 {
+  font-size: 1.9rem;
+}
+
+.markdown h3,
+.markdown .retro-h3 {
+  font-size: 1.6rem;
+}
+
+.markdown h4,
+.markdown .retro-h4 {
+  font-size: 1.3rem;
+}
+
+.markdown h5,
+.markdown .retro-h5 {
+  font-size: 1.1rem;
+}
+
+.markdown h6,
+.markdown .retro-h6 {
+  font-size: 0.9rem;
+}
+
+.markdown small,
+.markdown .retro-small {
+  font-size: 0.8rem;
+}
+
+.markdown img,
+.markdown canvas,
+.markdown iframe,
+.markdown video,
+.markdown svg,
+.markdown select,
+.markdown textarea {
+  max-width: 100%;
+}
+
+.markdown {
+  background-color: transparent;
+  min-height: 100%;
+}
+
+.markdown {
+  color: var(--dark-100);
+  font-family: inherit;
+  line-height: 1.45;
+}
+
+.markdown pre {
+  background-color: rgb(226 232 240);
+  margin: 1rem 0;
+}
+
+.markdown code {
+  background-color: rgb(226 232 240);
+  padding: 2px 6px;
+}
+
+.markdown pre code {
+  background-color: inherit;
+}
+
+.markdown blockquote {
+  border-left: 3px solid var(--light-100);
+  padding-left: 1rem;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.markdown ul ul,
+.markdown ol ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+
+.markdown ol ol,
+.markdown ul ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+
+.markdown hr {
+  border-color: var(--light-600);
+}
+
+/* dark mode */
+
+.dark .markdown a,
+.dark .markdown a:visited {
+  color: var(--light-600);
+}
+
+.dark .markdown a:hover,
+.dark .markdown a:focus,
+.dark .markdown a:active {
+  color: var(--light-500);
+}
+
+.dark .markdown {
+  color: #fafafa;
+}
+
+.dark .markdown pre,
+.dark .markdown code {
+  background-color: var(--dark-200);
+}
+
+.dark .markdown hr {
+  border-color: var(--dark-200);
+}
+
+.markdown a,
+.markdown ol,
+.markdown ul,
+.markdown p,
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6,
+.markdown code,
+.markdown abbr,
+.markdown img,
+.markdown canvas,
+.markdown iframe,
+.markdown video,
+.markdown svg,
+.markdown select,
+.markdown textarea {
+  margin: 8px 0;
+}
