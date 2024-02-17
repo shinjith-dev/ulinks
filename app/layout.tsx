@@ -10,11 +10,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ULinks | shinjith-dev",
+  title: "ULinks",
   description: "A curated collection of useful links for developers",
   metadataBase: new URL("https://ulinks.shinjith.dev"),
   openGraph: {
-    siteName: "ULinks | shinjith-dev",
+    siteName: "ULinks",
     type: "website",
     locale: "en_IN",
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     "max-video-preview": -1,
     googleBot: "index, follow",
   },
-  applicationName: "ULinks | shinjith-dev",
+  applicationName: "ULinks",
   appleWebApp: {
-    title: "ULinks | shinjith-dev",
+    title: "ULinks",
     statusBarStyle: "default",
     capable: true,
   },
@@ -42,11 +42,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} max-w-4xl mx-auto bg-[#fafafa] dark:bg-dark-100 transition`}
+        className={`${inter.className} max-w-4xl mx-auto bg-[#fafafa] dark:bg-dark-100 transition flex flex-col min-h-screen`}
       >
         <Navbar />
 
-        <main className="px-4">{children}</main>
+        <main className="px-4 grow flex flex-col">{children}</main>
+
+        <footer className="text-center py-3 px-8 text-light-200 dark:text-dark-500">Created and maintained by shinjith-dev</footer>
       </body>
     </html>
   );
