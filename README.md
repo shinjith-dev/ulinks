@@ -1,6 +1,9 @@
-![](/assets/banner.svg)
+<p align="center">
+  <a rel="noopener noreferrer" href="https://ulinks.shinjith.dev/">
+    <img src="/assets/banner.svg" />
+  </a>
+</p>
 
-------
 
 The [ULinks](https://ulinks.shinjith.dev) contains a wide range of valuable links that may be useful to developers in various domains. The list is still in its early stages; please contribute your collection to help it grow.
 ## Run Locally
