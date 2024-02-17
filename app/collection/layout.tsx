@@ -1,4 +1,4 @@
-import "@/styles/markdown.css"
+import "@/styles/markdown.css";
 
 export default function Layout({
   children,

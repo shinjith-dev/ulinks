@@ -170,8 +170,6 @@ h6 {
 }
 
 /* custom css  */
-.app {
-  max-width: 1200px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
