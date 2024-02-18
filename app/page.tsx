@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full mt-8 h-full grow flex justify-center items-center">
+    <div className="w-full h-full grow flex justify-center items-center">
       <div className="w-full relative h-full max-w-[min(90vw,500px)] text-center">
         <h1 className="text-4xl md:text-6xl font-bold tracking-wider text-brand mb-1">
           U<span className="text-light-200 dark:text-dark-500">seful</span>{" "}
