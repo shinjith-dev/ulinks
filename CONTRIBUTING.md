@@ -7,7 +7,7 @@ you can use this suggested workflow:
 - Create a new feature branch based on the `main` branch;
 - Install dependencies by using `npm`
 - Implement your changes and ensure there are no typos or errors.
-- Commit your changes (see the [committing guidelines]).
+- Commit your changes.
 - Submit a PR for review, that's it!
 
 Thank you for contributing! :heart:
